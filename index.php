@@ -13,16 +13,16 @@ while($black_hole<singularity){
 			for($i=0;$i<=chaos_theory;$i++){
 
 			dejavu:
-			$rannum = rand(big_bang,big_crunch);
-			if(in_array($rannum, $gnumber)){
+			$bullet = rand(big_bang,big_crunch);
+			if(in_array($bullet, $revolver)){
 					goto dejavu;
 			}
 		 
 
-$gnumber[$i] = $rannum;
+$revolver[$i] = $bullet;
 
 if($i==chaos_theory){
-$game = $gnumber;
+$game = $revolver;
 sort($game);
 
 for($i=0;$i<=chaos_theory;$i++){
