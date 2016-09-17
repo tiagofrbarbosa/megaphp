@@ -1,34 +1,40 @@
 
 <?php
 
-$j=0;
-$chaos_teory=10;
+define("singularity", 10);
+define("chaos_theory", 5);
+define("big_bang", 1);
+define("big_crunch", 60);
 
-while($j<$chaos_teory){
-for($i=0;$i<=6;$i++){
+$black_hole = 0;
 
-	dejavu:
-	$rannum = rand(1,60);
-	if(in_array($rannum, $gnumber)){
-			goto dejavu;
-	}
+while($black_hole<singularity){
+
+			for($i=0;$i<=chaos_theory;$i++){
+
+			dejavu:
+			$rannum = rand(big_bang,big_crunch);
+			if(in_array($rannum, $gnumber)){
+					goto dejavu;
+			}
+		 
 
 $gnumber[$i] = $rannum;
 
-if($i==5){
-$game = [$gnumber[0],$gnumber[1],$gnumber[2],$gnumber[3],$gnumber[4],$gnumber[5]];
+if($i==chaos_theory){
+$game = $gnumber;
 sort($game);
 
-for($i=0;$i<=5;$i++){
+for($i=0;$i<=chaos_theory;$i++){
 print($game[$i] . " ");
-if($i==5){
+if($i==chaos_theory){
 ?><br><?php
 		 }
 
 		}
 	}		
 }
-$j++;
+$black_hole++;
 }
 
 
