@@ -32,7 +32,7 @@ if($i==chaos_theory){
 $black_hole++;
 }
 
-print('************************');
+print('***********************');
 ?><br><?php
 print($crawler . ' ' .chaos_theory);
 ?><br><?php
